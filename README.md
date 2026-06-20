@@ -1,64 +1,24 @@
 # House Price Prediction Using Machine Learning
 
-## Overview
+## Project Overview
 
-This project predicts house prices using machine learning techniques. The dataset contains information about house characteristics such as area, bedrooms, bathrooms, stories, parking spaces, and amenities. The goal is to analyze the factors affecting house prices and build predictive models.
+This project aims to predict house prices using machine learning techniques based on various housing features such as area, number of bedrooms, bathrooms, stories, parking spaces, and amenities. The project includes data cleaning, exploratory analysis, model building, evaluation, and visualization.
 
 ## Dataset
 
-* Dataset Name: Housing Prices Dataset
-* Source: Kaggle
-* Number of Records: 545
-* Target Variable: Price
+* Dataset: Housing Prices Dataset
+* Source: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
+* Records: 545 houses
+* Target Variable: `price`
 
-## Project Workflow
+## Project Objectives
 
-### 1. Data Preparation
-
-* Loaded the housing dataset.
-* Explored dataset structure and features.
-* Selected relevant features for price prediction.
-
-### 2. Data Cleaning
-
-* Checked for missing values.
-* Removed duplicate records.
-* Converted categorical variables into numerical format using one-hot encoding.
-
-### 3. Model Building
-
-Two machine learning models were trained:
-
-#### Linear Regression
-
-* MAE: 932,640.44
-* RMSE: 1,251,802.93
-* R² Score: 0.5503
-
-#### Random Forest Regressor
-
-* MAE:  953420.79
-* RMSE: 1,292,181.38
-* R² Score: 0.5208
-
-### Model Comparison
-
-The Linear Regression model achieved slightly better performance than the Random Forest Regressor with lower prediction errors and a higher R² score.
-
-## Visualizations
-
-The following visualizations were created:
-
-1. Histogram of House Price Distribution
-2. Correlation Heatmap of Housing Features
-3. Actual vs Predicted House Prices Scatter Plot
-
-## Key Findings
-
-* Area is the strongest factor influencing house prices.
-* Bathrooms, stories, and air conditioning also contribute significantly.
-* Larger houses generally have higher prices.
-* The model explains approximately 55% of the variation in house prices.
+* Clean and preprocess housing data.
+* Handle missing values and duplicates.
+* Convert categorical features into numerical format using one-hot encoding.
+* Train machine learning models to predict house prices.
+* Evaluate model performance using MAE, RMSE, and R² Score.
+* Visualize important patterns and relationships in the data.
 
 ## Technologies Used
 
@@ -70,7 +30,53 @@ The following visualizations were created:
 * Scikit-learn
 * Jupyter Notebook
 
+## Data Preprocessing
+
+* Checked and handled missing values.
+* Removed duplicate records.
+* Applied one-hot encoding to categorical variables.
+* Selected meaningful features for prediction.
+
+## Models Used
+
+### 1. Linear Regression
+
+Performance:
+
+* MAE: 932,640.44
+* RMSE: 1,251,802.93
+* R² Score: 0.5503
+
+### 2. Random Forest Regressor
+
+Performance:
+
+* MAE: 953420.79
+* RMSE: 1,292,181.38
+* R² Score: 0.5208
+
+## Model Comparison
+
+The Linear Regression model performed slightly better than the Random Forest Regressor on this dataset, achieving lower error values and a higher R² score.
+
+## Visualizations
+
+1. Histogram of House Price Distribution
+2. Correlation Heatmap of Housing Features
+3. Actual vs Predicted House Prices Scatter Plot
+
+## Key Findings
+
+* Area is the most influential factor affecting house prices.
+* Bathrooms, stories, and air conditioning also have a significant impact.
+* Houses with similar areas may have different prices due to amenities and location-related factors.
+* The Linear Regression model explains approximately 55% of the variation in house prices.
+
+## Recommendation
+
+Real estate businesses should focus on properties with larger areas and better amenities, as these features contribute significantly to higher property values and customer demand.
+
 ## Conclusion
 
-This project successfully developed a house price prediction model using machine learning. After evaluating multiple models, Linear Regression was selected as the best-performing model for this dataset. The analysis highlights the importance of property size and amenities in determining house prices.
+This project successfully developed a house price prediction system using machine learning. After comparing two models, Linear Regression provided the best performance and was selected as the final model for predicting house prices.
 
